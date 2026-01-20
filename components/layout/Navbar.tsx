@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextImage from "next/image";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -13,8 +14,13 @@ export function Navbar() {
             <div className="container mx-auto flex h-16 items-center justify-between px-4">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white shadow-sm transition-transform group-hover:scale-105">
-                        <span className="font-bold text-lg">R</span>
+                    <div className="relative h-8 w-8 overflow-hidden rounded-lg shadow-sm transition-transform group-hover:scale-105">
+                        <NextImage
+                            src="/logo.png"
+                            alt="R2D Solutions Logo"
+                            fill
+                            className="object-cover"
+                        />
                     </div>
                     <span className="font-heading text-xl font-bold tracking-tight text-foreground">R2DSolutions</span>
                 </Link>
