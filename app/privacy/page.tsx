@@ -48,16 +48,16 @@ export default function PrivacyPage() {
                     <div className="space-y-4 not-prose">
                         <PermissionAccordion
                             title="Auto Tab Switcher Permissions"
-                            colorClass="bg-secondary"
-                            textColorClass="text-secondary"
+                            colorClass="bg-primary"
+                            textColorClass="text-primary"
                             isOpenDefault={true}
                         >
                             <div className="grid gap-4 sm:grid-cols-2">
-                                <PermissionCard name="tabs" description="Used to identify, switch, and manage active tabs automatically." colorClass="text-secondary" />
-                                <PermissionCard name="storage" description="To save your custom tab switching intervals and rules." colorClass="text-secondary" />
-                                <PermissionCard name="alarms" description="To trigger the automatic tab switch at precise intervals." colorClass="text-secondary" />
-                                <PermissionCard name="windows" description="To manage focus between different browser windows for multi-display setups." colorClass="text-secondary" />
-                                <PermissionCard name="downloads" description="Allows you to export your configuration rules as a local backup file." colorClass="text-secondary" />
+                                <PermissionCard name="tabs" description="Used to identify, switch, and manage active tabs automatically." colorClass="text-primary" />
+                                <PermissionCard name="storage" description="To save your custom tab switching intervals and rules." colorClass="text-primary" />
+                                <PermissionCard name="alarms" description="To trigger the automatic tab switch at precise intervals." colorClass="text-primary" />
+                                <PermissionCard name="windows" description="To manage focus between different browser windows for multi-display setups." colorClass="text-primary" />
+                                <PermissionCard name="downloads" description="Allows you to export your configuration rules as a local backup file." colorClass="text-primary" />
                             </div>
                         </PermissionAccordion>
 
