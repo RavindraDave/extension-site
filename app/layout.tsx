@@ -29,8 +29,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://r2dsolutions.com", // Todo: Update with real URL
+    url: "https://r2dsolutions.com",
     siteName: "R2DSolutions",
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 };
 
