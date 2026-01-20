@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, ShieldAlert, Zap, Keyboard, Settings, Activity, CheckCircle2, Star } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { FAQSection } from "@/components/sections/FAQSection";
 
 export default function AutoTabSwitcherPage() {
@@ -194,12 +195,12 @@ export default function AutoTabSwitcherPage() {
                                 </div>
                                 <div className="flex-1">
                                     {/* Image Placeholder - Will be replaced with generated image */}
-                                    <div className="aspect-video w-full overflow-hidden rounded-2xl border border-border bg-black/40 shadow-2xl transition-transform hover:scale-[1.02]">
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img
+                                    <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-black/40 shadow-2xl transition-transform hover:scale-[1.02]">
+                                        <Image
                                             src={useCase.image}
                                             alt={useCase.title}
-                                            className="h-full w-full object-cover opacity-80"
+                                            fill
+                                            className="object-cover opacity-80"
                                         />
                                     </div>
                                 </div>
