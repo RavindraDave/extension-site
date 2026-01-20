@@ -9,7 +9,7 @@ const navItems = [
 
 export function Navbar() {
     return (
-        <header className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
+        <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-background/40 backdrop-blur-2xl supports-[backdrop-filter]:bg-background/20">
             <div className="container mx-auto flex h-16 items-center justify-between px-4">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
@@ -25,7 +25,7 @@ export function Navbar() {
                         <Link
                             key={item.name}
                             href={item.href}
-                            className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                            className="text-sm font-medium text-muted-foreground/90 transition-all hover:text-primary hover:bg-primary/5 px-3 py-2 rounded-full"
                         >
                             {item.name}
                         </Link>
@@ -36,7 +36,7 @@ export function Navbar() {
                 <div className="flex items-center gap-4">
                     <Link
                         href="/contact"
-                        className="hidden rounded-full bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm transition-all hover:bg-primary/90 hover:shadow-md md:block"
+                        className="hidden rounded-full bg-gradient-to-r from-primary to-secondary px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all hover:shadow-primary/40 hover:scale-105 active:scale-95 md:block"
                     >
                         Contact Us
                     </Link>

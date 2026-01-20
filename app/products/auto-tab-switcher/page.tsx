@@ -129,6 +129,7 @@ export default function AutoTabSwitcherPage() {
                         <Link
                             href="https://chromewebstore.google.com/detail/auto-tab-switcher/mophipfldpoeeimgjfmcnidafjggmiko"
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 font-semibold text-white shadow-md shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5"
                         >
                             Add to Chrome
@@ -246,6 +247,7 @@ export default function AutoTabSwitcherPage() {
                     <Link
                         href="https://chromewebstore.google.com/detail/auto-tab-switcher/mophipfldpoeeimgjfmcnidafjggmiko"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded-full bg-primary px-12 py-6 text-lg font-bold text-white shadow-xl shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-105"
                     >
                         Get Auto Tab Switcher
