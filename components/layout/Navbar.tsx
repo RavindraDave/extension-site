@@ -2,6 +2,7 @@ import Link from "next/link";
 import NextImage from "next/image";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import { useState, useEffect } from "react";
 
 const navItems = [
     { name: "Products", href: "/products" },
@@ -10,8 +11,25 @@ const navItems = [
 ];
 
 export function Navbar() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 10);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-background/40 backdrop-blur-2xl supports-[backdrop-filter]:bg-background/20">
+        <header
+            className={cn(
+                "fixed top-0 z-50 w-full transition-all duration-300",
+                isScrolled
+                    ? "border-b border-border/40 bg-background/60 backdrop-blur-xl shadow-sm supports-[backdrop-filter]:bg-background/60"
+                    : "border-b border-transparent bg-transparent"
+            )}
+        >
             <div className="container mx-auto flex h-16 items-center justify-between px-4">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
