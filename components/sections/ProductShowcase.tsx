@@ -12,7 +12,7 @@ const products = [
         description:
             "Transform your browser into a powerful automated display system. Perfect for monitoring dashboards, digital signage, and multi-display setups.",
         icon: Zap,
-        gradient: "from-secondary via-secondary/80 to-secondary/50",
+        gradient: "from-primary/20 via-primary/15 to-primary/10",
         features: [
             { icon: Zap, text: "Automated Tab Cycling" },
             { icon: Clock, text: "Per-Window Control" },
@@ -30,7 +30,7 @@ const products = [
         description:
             "The ultimate productivity suite combining a Pomodoro timer, powerful website blocker, and advanced analytics to help you achieve deep work.",
         icon: Timer,
-        gradient: "from-primary via-primary/80 to-primary/50",
+        gradient: "from-primary/30 via-primary/20 to-primary/10",
         features: [
             { icon: Clock, text: "Smart Pomodoro Timer" },
             { icon: ShieldAlert, text: "Nuclear Mode Blocking" },
@@ -69,8 +69,8 @@ export function ProductShowcase() {
                         <div className={`absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gradient-to-br ${product.gradient} opacity-[0.15] blur-3xl transition-opacity group-hover:opacity-25`} />
 
                         <div className="relative z-10">
-                            <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/5 shadow-inner backdrop-blur-md">
-                                <product.icon className="h-6 w-6 text-foreground" />
+                            <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 shadow-inner backdrop-blur-md">
+                                <product.icon className="h-6 w-6 text-primary/80" />
                             </div>
 
                             <h3 className="font-heading mb-2 text-2xl font-bold">
@@ -86,7 +86,7 @@ export function ProductShowcase() {
                             <div className="mb-8 space-y-3">
                                 {product.features.map((feature, i) => (
                                     <div key={i} className="flex items-center gap-3">
-                                        <feature.icon className="h-4 w-4 text-accent" />
+                                        <feature.icon className="h-4 w-4 text-primary/60" />
                                         <span className="text-sm text-foreground/80">
                                             {feature.text}
                                         </span>

@@ -24,18 +24,18 @@ export function HeroSection() {
                     className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-1.5 text-sm font-medium text-foreground/80 backdrop-blur-md"
                 >
                     <Sparkles className="h-4 w-4 text-primary" />
-                    <span>Elevate Your Browser Workflow</span>
+                    <span>Requirement to Development</span>
                 </motion.div>
 
                 <h1 className="font-heading mb-6 text-5xl font-bold tracking-tight text-foreground sm:text-7xl">
-                    R2DSolutions <br />
+                    Reclaim Your Time. <br />
                     <span className="text-primary text-4xl sm:text-6xl block mt-2 font-semibold tracking-normal opacity-90">
-                        Requirement to Development
+                        Amplify Your Focus.
                     </span>
                 </h1>
 
                 <p className="text-muted-foreground mx-auto mb-10 max-w-2xl text-xl leading-relaxed">
-                    We transform your ideas into powerful digital reality. Explore our premium extensions or partner with us for custom software solutions.
+                    We craft premium browser extensions that help professionals eliminate distractions, automate workflows, and achieve deep work. Privacy-first, professionally crafted, and built with care.
                 </p>
 
                 <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

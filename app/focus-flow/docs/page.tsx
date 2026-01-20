@@ -126,8 +126,8 @@ export default function FocusFlowDocs() {
                     <section id="pro-tips" className="scroll-mt-24 space-y-6">
                         <SectionHeader icon={Brain} title="Pro Tips" />
 
-                        <div className="p-6 bg-yellow-500/10 border border-yellow-500/20 rounded-xl">
-                            <h3 className="font-semibold text-yellow-600 mb-2 flex items-center gap-2">
+                        <div className="p-6 bg-primary/10 border border-primary/20 rounded-xl">
+                            <h3 className="font-semibold text-primary/90 mb-2 flex items-center gap-2">
                                 <AlertTriangle className="w-5 h-5" /> Strict Blocking
                             </h3>
                             <p className="text-sm text-muted-foreground mb-4">

@@ -29,49 +29,51 @@
 
 /* Custom Utilities */
 @utility glass {
-  background: rgba(30, 41, 59, 0.7);
+  background: color-mix(in srgb, var(--card) 70%, transparent);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
 }
 
 @utility glass-hover {
   @apply transition-colors duration-300;
+
   &:hover {
-    background: rgba(30, 41, 59, 0.85);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: color-mix(in srgb, var(--card) 85%, transparent);
+    border-color: color-mix(in srgb, var(--border) 70%, transparent);
   }
 }
 
 :root {
-  /* Dark Mode Default (The Void) */
-  --background: #0f172a; /* Slate 900 */
-  --foreground: #f8fafc; /* Slate 50 */
+  /* Default Theme: Modern Tech (Cool Slate) */
+  /* Theme can be changed dynamically via ThemeSwitcher component in dev mode */
 
-  --card: rgba(30, 41, 59, 0.7);
-  --card-foreground: #f8fafc;
+  --background: #F8FAFC;
+  --foreground: #01184c;
 
-  --popover: #0f172a;
-  --popover-foreground: #f8fafc;
+  --card: #ffffff;
+  --card-foreground: #01184c;
 
-  /* The Aurora Gradient Colors as Primary */
-  --primary: #3b82f6; /* Blue 500 */
+  --popover: #ffffff;
+  --popover-foreground: #01184c;
+
+  --primary: #e94430;
   --primary-foreground: #ffffff;
 
-  --secondary: #8b5cf6; /* Violet 500 */
-  --secondary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
 
-  --accent: #14b8a6; /* Teal 500 */
-  --accent-foreground: #ffffff;
+  --accent: #f8fafc;
+  --accent-foreground: #0f172a;
 
-  --muted: #1e293b; /* Slate 800 */
-  --muted-foreground: #94a3b8; /* Slate 400 */
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
 
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
 
-  --border: #334155; /* Slate 700 */
-  --input: #334155;
-  --ring: #3b82f6;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #e94430;
 
   --radius: 0.75rem;
 }

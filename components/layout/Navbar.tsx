@@ -1,6 +1,7 @@
 import Link from "next/link";
 import NextImage from "next/image";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 const navItems = [
     { name: "Products", href: "/products" },
@@ -40,9 +41,10 @@ export function Navbar() {
 
                 {/* CTA */}
                 <div className="flex items-center gap-4">
+                    <ThemeToggle />
                     <Link
                         href="/contact"
-                        className="hidden rounded-full bg-gradient-to-r from-primary to-secondary px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/20 transition-all hover:shadow-primary/40 hover:scale-105 active:scale-95 md:block"
+                        className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:shadow-primary/40 hover:scale-105 hover:bg-primary/90 active:scale-95 md:block"
                     >
                         Contact Us
                     </Link>

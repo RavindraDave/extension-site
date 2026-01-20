@@ -22,7 +22,7 @@ export default function ContactPage() {
 
                 <div className="container mx-auto grid gap-8 md:grid-cols-2 max-w-4xl">
                     <div className="glass rounded-2xl p-8 hover:bg-white/5 text-left">
-                        <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/20 text-primary">
+                        <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary/80">
                             <Mail className="h-6 w-6" />
                         </div>
                         <h3 className="font-heading mb-2 text-xl font-semibold">Email Us</h3>
@@ -31,12 +31,12 @@ export default function ContactPage() {
                     </div>
 
                     <div className="glass rounded-2xl p-8 hover:bg-white/5 text-left">
-                        <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-secondary/20 text-secondary">
+                        <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary/80">
                             <MessageSquare className="h-6 w-6" />
                         </div>
                         <h3 className="font-heading mb-2 text-xl font-semibold">Support</h3>
                         <p className="text-muted-foreground mb-4">Need help with Focus Flow or Auto Tab Switcher?</p>
-                        <a href="mailto:support@r2dsolutions.com" className="text-secondary hover:underline">support@r2dsolutions.com</a>
+                        <a href="mailto:support@r2dsolutions.com" className="text-primary hover:underline">support@r2dsolutions.com</a>
                     </div>
                 </div>
             </section>
