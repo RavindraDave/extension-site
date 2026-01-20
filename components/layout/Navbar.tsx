@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import NextImage from "next/image";
 import { cn } from "@/lib/utils";
@@ -33,7 +35,7 @@ export function Navbar() {
             <div className="container mx-auto flex h-16 items-center justify-between px-4">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
-                    <div className="relative h-8 w-8 overflow-hidden rounded-lg shadow-sm transition-transform group-hover:scale-105">
+                    <div className="relative h-8 w-8 overflow-hidden shadow-sm transition-transform group-hover:scale-105">
                         <NextImage
                             src="/logo.png"
                             alt="R2D Solutions Logo"
