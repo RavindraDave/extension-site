@@ -5,6 +5,9 @@ import { ArrowRight, Clock, ShieldAlert, Zap, Keyboard, Settings, Activity, Chec
 import Link from "next/link";
 import Image from "next/image";
 import { FAQSection } from "@/components/sections/FAQSection";
+import dashboardImg from "./assets/dashboard_monitoring.png";
+import signageImg from "./assets/digital_signage.png";
+import tradingImg from "./assets/trading_finance.png";
 
 export default function AutoTabSwitcherPage() {
     const features = [
@@ -44,17 +47,17 @@ export default function AutoTabSwitcherPage() {
         {
             title: "Dashboard Monitoring",
             description: "Rotate through analytics dashboards (Datadog, Grafana, Google Analytics) on a dedicated monitor to keep your team informed.",
-            image: "/dashboard_monitoring.png" // Placeholder for generated image
+            image: dashboardImg
         },
         {
             title: "Digital Signage",
             description: "Power screens in your office lobby or shop. Cyclically display announcements, news, or promotional slides.",
-            image: "/digital_signage.png" // Placeholder for generated image
+            image: signageImg
         },
         {
             title: "Trading Stations",
             description: "Monitor multiple financial markets. Cycle through stock charts, crypto tickers, and news feeds hands-free.",
-            image: "/trading_finance.png" // Placeholder for generated image
+            image: tradingImg
         }
     ];
 

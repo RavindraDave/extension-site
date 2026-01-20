@@ -3,7 +3,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, ShieldAlert, Zap, Settings, Activity, CheckCircle2, Star, Trophy, Youtube, Flame } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { FAQSection } from "@/components/sections/FAQSection";
+import focusWorkImg from "./assets/focus_work.png";
+import studentFocusImg from "./assets/student_focus.png";
+import mindfulBrowsingImg from "./assets/mindful_browsing.png";
 
 export default function FocusFlowPage() {
     const features = [
@@ -43,17 +47,17 @@ export default function FocusFlowPage() {
         {
             title: "Deep Work for Developers",
             description: "Block Slack, Jira, and StackOverflow rabbit holes during intense coding sessions. Use Nuclear Mode to guarantee focus.",
-            image: "/focus_work.png"
+            image: focusWorkImg
         },
         {
             title: "Distraction-Free Studying",
             description: "Students can block social media and clean up YouTube UI to focus strictly on educational content without the 'algorithm' pull.",
-            image: "/student_focus.png"
+            image: studentFocusImg
         },
         {
             title: "Mindful Browsing",
             description: "Set daily allowances for time-sink websites. Get notified when your 30-minute Reddit limit is up.",
-            image: "/mindful_browsing.png"
+            image: mindfulBrowsingImg
         }
     ];
 
@@ -170,12 +174,12 @@ export default function FocusFlowPage() {
                                     </ul>
                                 </div>
                                 <div className="flex-1">
-                                    <div className="aspect-video w-full overflow-hidden rounded-2xl border border-border bg-black/40 shadow-2xl">
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img
+                                    <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-black/40 shadow-2xl">
+                                        <Image
                                             src={useCase.image}
                                             alt={useCase.title}
-                                            className="h-full w-full object-cover opacity-80"
+                                            fill
+                                            className="object-cover opacity-80"
                                         />
                                     </div>
                                 </div>
