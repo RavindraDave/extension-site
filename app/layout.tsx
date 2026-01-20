@@ -33,7 +33,9 @@ export const metadata: Metadata = {
     siteName: "R2DSolutions",
   },
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+    ],
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
