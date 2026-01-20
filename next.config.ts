@@ -1,41 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
   reactStrictMode: true,
-  poweredByHeader: false, // Hide "X-Powered-By: Next.js"
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "X-DNS-Prefetch-Control",
-            value: "on",
-          },
-          {
-            key: "Strict-Transport-Security",
-            value: "max-age=63072000; includeSubDomains; preload",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "origin-when-cross-origin",
-          },
-          {
-            key: "Content-Security-Policy",
-            value: "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data: https:;",
-          },
-        ],
-      },
-    ];
+  poweredByHeader: false,
+  images: {
+    unoptimized: true, // Required for static export
   },
+  // Note: Headers are not supported in static export mode. 
+  // We rely on meta tags in layout.tsx and platform-specific config (like _headers for Cloudflare, or meta tags for GH Pages).
+
+  // Necessary for GitHub Pages project sites (e.g. username.github.io/repo-name)
+  // Ensure you set this env var in your build pipeline if deploying to a subdirectory
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
 };
 
 export default nextConfig;

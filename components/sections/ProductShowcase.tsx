@@ -2,9 +2,27 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Clock, ShieldAlert, Timer, Zap } from "lucide-react";
+import { ArrowRight, Clock, ShieldAlert, Timer, Zap, Keyboard, Settings, Activity, Star } from "lucide-react";
 
 const products = [
+    {
+        id: "auto-tab-switcher",
+        name: "Auto Tab Switcher",
+        tagline: "Automate Your Workflow",
+        description:
+            "Transform your browser into a powerful automated display system. Perfect for monitoring dashboards, digital signage, and multi-display setups.",
+        icon: Zap,
+        gradient: "from-secondary via-secondary/80 to-secondary/50",
+        features: [
+            { icon: Zap, text: "Automated Tab Cycling" },
+            { icon: Clock, text: "Per-Window Control" },
+            { icon: ShieldAlert, text: "Activity Awareness" },
+            { icon: Keyboard, text: "Keyboard Shortcuts" },
+            { icon: Settings, text: "Flexible Operating Modes" },
+            { icon: Activity, text: "Professional Diagnostics" },
+        ],
+        href: "/products/auto-tab-switcher",
+    },
     {
         id: "focus-flow",
         name: "Focus Flow",
@@ -16,24 +34,12 @@ const products = [
         features: [
             { icon: Clock, text: "Smart Pomodoro Timer" },
             { icon: ShieldAlert, text: "Nuclear Mode Blocking" },
-            { icon: Zap, text: "Deep Focus Analytics" },
+            { icon: Activity, text: "Deep Focus Analytics" },
+            { icon: Zap, text: "YouTube Distraction Controls" },
+            { icon: Settings, text: "Custom Schedules" },
+            { icon: Star, text: "Streak & Achievements" },
         ],
         href: "/products/focus-flow",
-    },
-    {
-        id: "auto-tab-switcher",
-        name: "Auto Tab Switcher",
-        tagline: "Automate Your Workflow",
-        description:
-            "Automatically cycle through open tabs at configurable intervals. Perfect for monitoring dashboards, kiosks, and multi-display setups.",
-        icon: Zap,
-        gradient: "from-secondary via-secondary/80 to-secondary/50",
-        features: [
-            { icon: Zap, text: "Automated Tab Cycling" },
-            { icon: Clock, text: "Per-Window Control" },
-            { icon: ShieldAlert, text: "Activity Awareness" },
-        ],
-        href: "/products/auto-tab-switcher",
     },
 ];
 
