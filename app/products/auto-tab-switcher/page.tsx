@@ -167,7 +167,7 @@ export default function AutoTabSwitcherPage() {
             </section>
 
             {/* Use Cases Section */}
-            <section className="bg-secondary/10 py-24">
+            <section className="bg-primary/5 py-24">
                 <div className="container mx-auto px-4">
                     <div className="mb-16 text-center">
                         <h2 className="font-heading mb-4 text-3xl font-bold sm:text-4xl">Proven Use Cases</h2>
@@ -199,7 +199,7 @@ export default function AutoTabSwitcherPage() {
                                 </div>
                                 <div className="flex-1">
                                     {/* Image Placeholder - Will be replaced with generated image */}
-                                    <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-black/40 shadow-2xl transition-transform hover:scale-[1.02]">
+                                    <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-black/40 shadow-2xl">
                                         <Image
                                             src={useCase.image}
                                             alt={useCase.title}
