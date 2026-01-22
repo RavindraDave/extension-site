@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Clock, ShieldAlert, Timer, Zap, Keyboard, Settings, Activity, Star } from "lucide-react";
+import { ArrowRight, Clock, ShieldAlert, Timer, Zap, Keyboard, Settings, Activity, Star, Sparkles } from "lucide-react";
 
 const products = [
     {
@@ -41,6 +41,22 @@ const products = [
         ],
         href: "/products/focus-flow",
     },
+    {
+        id: "coming-soon",
+        name: "More Tools Coming Soon",
+        tagline: "Expanding Your Toolkit",
+        description:
+            "We are constantly building new extensions to supercharge your productivity. Stay tuned for what's next.",
+        icon: Sparkles,
+        gradient: "from-secondary/30 via-secondary/20 to-secondary/10",
+        features: [
+            { icon: Sparkles, text: "Innovative Ideas" },
+            { icon: Clock, text: "Waitlist Open" },
+            { icon: Activity, text: "User-Driven Features" },
+        ],
+        href: "/contact",
+        actionText: "Join Waitlist"
+    },
 ];
 
 export function ProductShowcase() {
@@ -56,7 +72,7 @@ export function ProductShowcase() {
                 </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
                 {products.map((product, index) => (
                     <motion.div
                         key={product.id}
@@ -98,7 +114,7 @@ export function ProductShowcase() {
                                 href={product.href}
                                 className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
                             >
-                                Learn more <ArrowRight className="h-4 w-4" />
+                                {product.id === "coming-soon" ? "Join Waitlist" : "Learn more"} <ArrowRight className="h-4 w-4" />
                             </Link>
                         </div>
                     </motion.div>

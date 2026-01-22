@@ -106,10 +106,12 @@ export default function FocusFlowPage() {
 
                     <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                         <Link
-                            href="/contact"
+                            href="https://chromewebstore.google.com/detail/focus-flow/kfcgbhgdjedafjgembdfebnfaakdfckg"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 font-semibold text-white shadow-md shadow-primary/20 transition-all hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5"
                         >
-                            Get Notified on Launch
+                            Add to Chrome
                             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Link>
                     </div>
@@ -120,7 +122,7 @@ export default function FocusFlowPage() {
             <section className="container mx-auto px-4 py-24 border-t border-white/5">
                 <div className="mb-16 text-center">
                     <h2 className="font-heading mb-4 text-3xl font-bold sm:text-4xl">Built for Deep Work</h2>
-                    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Focus Flow replaces 3 separate extensions with one beautiful, integrated experience. <span className="text-primary font-semibold">Coming Soon.</span></p>
+                    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Focus Flow replaces 3 separate extensions with one beautiful, integrated experience.</p>
                 </div>
 
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -197,10 +199,12 @@ export default function FocusFlowPage() {
                 <div className="container mx-auto px-4">
                     <h2 className="font-heading mb-6 text-3xl font-bold sm:text-4xl">Ready to take back your time?</h2>
                     <Link
-                        href="/contact"
+                        href="https://chromewebstore.google.com/detail/focus-flow/kfcgbhgdjedafjgembdfebnfaakdfckg"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded-full bg-primary px-12 py-6 text-lg font-bold text-white shadow-xl shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-105"
                     >
-                        Notify Me on Launch
+                        Get Focus Flow
                         <ArrowRight className="h-5 w-5" />
                     </Link>
                 </div>
